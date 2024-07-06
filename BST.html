@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BST Animation</title>
+</head>
+<body>
+    <div id="controls">
+        <label for="nodeValue">Node Value:</label>
+        <input type="number" id="nodeValue" min="1" step="1">
+        <button onclick="insertNode()">Insert</button>
+        <button onclick="deleteNode()">Delete</button>
+        <button onclick="searchNode()">Search</button>
+        <label for="traversal">Traversal:</label>
+        <select id="traversal">
+            <option value="inOrder">In-order</option>
+            <option value="preOrder">Pre-order</option>
+            <option value="postOrder">Post-order</option>
+        </select>
+        <button onclick="visualizeTraversal()">Visualize Traversal</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="exitVisualization()">Exit Visualization</button>
+    </div>
+    <div id="outputDialog">
+        <span id="outputText"></span>
+        <button onclick="closeDialog()">Close</button>
+    </div>
+    <canvas id="bstCanvas" width="800" height="600"></canvas>
+    <script src="bst.js"></script>
+    <script src="anmiation.js"></script>
+</body>
+</html>
